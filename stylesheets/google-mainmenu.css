@@ -1,0 +1,75 @@
+/* line 5, ../sass/google-mainmenu.scss */
+.ellipse, .main-item__link, .sub-ul li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* line 14, ../sass/google-mainmenu.scss */
+.main-ul {
+  display: inline-block;
+  text-align: center;
+  line-height: 2rem;
+}
+
+/* line 20, ../sass/google-mainmenu.scss */
+.main-item {
+  float: left;
+  width: 150px;
+}
+
+/* line 25, ../sass/google-mainmenu.scss */
+.main-item__link {
+  position: relative;
+  display: block;
+  z-index: 2;
+  background-color: #fff;
+}
+/* line 32, ../sass/google-mainmenu.scss */
+.main-item__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 0px solid #3399CC;
+  transition: all .3s;
+}
+/* line 41, ../sass/google-mainmenu.scss */
+.main-item:hover .main-item__link::after {
+  border-bottom-width: 4px;
+}
+
+/* line 47, ../sass/google-mainmenu.scss */
+.sub-ul {
+  position: relative;
+  z-index: 1;
+}
+/* line 51, ../sass/google-mainmenu.scss */
+.sub-ul li {
+  margin-top: -2rem;
+  transition: margin-top .3s;
+}
+/* line 56, ../sass/google-mainmenu.scss */
+.main-item:hover .sub-ul li {
+  margin-top: 0;
+}
+
+/* reset */
+/* line 63, ../sass/google-mainmenu.scss */
+body {
+  margin: 0;
+}
+
+/* line 67, ../sass/google-mainmenu.scss */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 72, ../sass/google-mainmenu.scss */
+a {
+  text-decoration: none;
+  font-weight: 900;
+  color: inherit;
+}
