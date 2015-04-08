@@ -2,37 +2,43 @@
 
 // common
 
-// mobile icon tab list
-$width: 25px;
-$height: 25px;
-$activeWidth: 100px;
-$activeHeight: 100px;
-$backAreaHeight: 20px;
-$lineColor: black;
-$bgHoverColor: #e3e3e3;
-// mobile icon tab list
+  // mobile icon tab list
+  $width: 25px;
+  $height: 25px;
+  $activeWidth: 100px;
+  $activeHeight: 100px;
+  $backAreaHeight: 20px;
+  $lineColor: black;
+  $bgHoverColor: #e3e3e3;
+  // mobile icon tab list
 
-// tab like google tab
-$itemHeight : 2rem;
+  // tab like google tab
+  $itemHeight : 2rem;
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
 
-a {
-  text-decoration: none;
-  font-weight: 900;
-  color: inherit;
-}
+  a {
+    text-decoration: none;
+    font-weight: 900;
+    color: inherit;
+  }
 
-.ellipse {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden
-}
+  .ellipse {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+  }
+  // tab like google tab
 
-// tab like google tab
+  /* multiple icons */
+  $duration: .5s;
+  $toggled-size : .75;
+  $nav-bg  : #2A2A2A;
+  $nav-content-bg : #E7E6DD;
+  /* multiple icons */
 
 // common
 
@@ -223,4 +229,135 @@ a {
 }
 // mobile icon tab list
 
+/* multiple icons */
+.navicon-button {
+  display: inline-block;
+  position: relative;
+  padding: 2.0625rem 1.5rem;
+  transition: $duration/2;
+  cursor: pointer;
+  user-select: none;
+  opacity: .8;
 
+  .navicon:before, .navicon:after {
+    transition: $duration/2;
+  }
+
+  &:hover {
+    transition: $duration;
+    opacity: 1;
+
+    .navicon:before, .navicon:after {
+      transition: $duration/2;
+    }
+
+    .navicon:before { top: .825rem; }
+    .navicon:after { top: -.825rem; }
+  }
+}
+
+.navicon {
+  position: relative;
+  width: 2.5em;
+  height: .3125rem;
+  background: $nav-content-bg;
+  transition: $duration;
+  border-radius: 2.5rem;
+
+  &:before, &:after {
+    display: block;
+    content: "";
+    height: .3125rem;
+    width: 2.5rem;
+    background: $nav-content-bg;
+    position: absolute;
+    z-index: -1;
+    transition: $duration $duration/2;
+    border-radius: 1rem;
+  }
+
+  &:before { top: .625rem; }
+  &:after { top: -.625rem; }
+}
+
+.open:not(.steps) .navicon:before,
+.open:not(.steps) .navicon:after {
+  top: 0 !important;
+}
+
+.open .navicon:before,
+.open .navicon:after {
+  transition: $duration;
+}
+
+/* Minus */
+.open { transform: scale($toggled-size); }
+
+/* Arrows */
+.open.larr .navicon,
+.open.rarr .navicon,
+.open.uarr .navicon {
+    &:before, &:after {
+      width: 1.5rem;
+    }
+
+    &:before { transform: rotate(35deg); transform-origin: left top; }
+    &:after { transform: rotate(-35deg); transform-origin: left bottom; }
+}
+.open.uarr { transform: scale($toggled-size) rotate(90deg); }
+
+/* Arrows */
+.open.rarr .navicon {
+    &:before { transform: translate3d(1em,0,0) rotate(-35deg); transform-origin: right top; }
+    &:after { transform: translate3d(1em,0,0) rotate(35deg); transform-origin: right bottom; }
+}
+
+/* × and + */
+.open.plus,
+.open.x {
+  .navicon {
+    background: transparent;
+
+    &:before { transform: rotate(-45deg); }
+    &:after { transform: rotate(45deg); }
+  }
+}
+.open.plus {
+  transform: scale($toggled-size) rotate(45deg)
+}
+
+
+/* Base ================== */
+
+section {
+  display: flex;
+  height: 400px;
+  max-width: 40rem;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: .5rem .5rem 0 0;
+  background: $nav-content-bg;
+  overflow: hidden;
+
+  /* Smoother animations */
+  & *,
+  & *:before,
+  & *:after {
+   transform: translate3d(0,0,0);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4.5rem;
+  background: $nav-bg;
+  text-align: right;
+  border-radius: .5rem .5rem 0 0;
+  padding: 0 1rem;
+
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+/* multiple icons */

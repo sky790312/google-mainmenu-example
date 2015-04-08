@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 18, ../sass/google-mainmenu.scss */
 ul {
   list-style-type: none;
@@ -18,27 +19,29 @@ a {
   overflow: hidden;
 }
 
-/* line 40, ../sass/google-mainmenu.scss */
+/* multiple icons */
+/* multiple icons */
+/* line 46, ../sass/google-mainmenu.scss */
 .main-ul {
   display: inline-block;
   text-align: center;
   line-height: 2rem;
 }
 
-/* line 46, ../sass/google-mainmenu.scss */
+/* line 52, ../sass/google-mainmenu.scss */
 .main-item {
   float: left;
   width: 150px;
 }
 
-/* line 51, ../sass/google-mainmenu.scss */
+/* line 57, ../sass/google-mainmenu.scss */
 .main-item__link {
   position: relative;
   display: block;
   z-index: 2;
   background-color: #fff;
 }
-/* line 58, ../sass/google-mainmenu.scss */
+/* line 64, ../sass/google-mainmenu.scss */
 .main-item__link:after {
   content: '';
   position: absolute;
@@ -48,40 +51,40 @@ a {
   border-bottom: 0px solid #3399CC;
   transition: all .3s;
 }
-/* line 67, ../sass/google-mainmenu.scss */
+/* line 73, ../sass/google-mainmenu.scss */
 .main-item:hover .main-item__link:after {
   border-bottom-width: 4px;
 }
 
-/* line 73, ../sass/google-mainmenu.scss */
+/* line 79, ../sass/google-mainmenu.scss */
 .sub-ul {
   position: relative;
   z-index: 1;
 }
-/* line 77, ../sass/google-mainmenu.scss */
+/* line 83, ../sass/google-mainmenu.scss */
 .sub-ul li {
   margin-top: -2rem;
   transition: margin-top .3s;
 }
-/* line 82, ../sass/google-mainmenu.scss */
+/* line 88, ../sass/google-mainmenu.scss */
 .main-item:hover .sub-ul li {
   margin-top: 0;
 }
 
-/* line 90, ../sass/google-mainmenu.scss */
+/* line 96, ../sass/google-mainmenu.scss */
 .icon-tab {
   position: relative;
   display: inline-block;
   height: 52px;
 }
-/* line 95, ../sass/google-mainmenu.scss */
+/* line 101, ../sass/google-mainmenu.scss */
 .icon-tab, .icon-tab:after, .icon-tab:before {
   vertical-align: top;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 100, ../sass/google-mainmenu.scss */
+/* line 106, ../sass/google-mainmenu.scss */
 .icon-tab > label {
   position: absolute;
   left: 0;
@@ -102,11 +105,11 @@ a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 115, ../sass/google-mainmenu.scss */
+/* line 121, ../sass/google-mainmenu.scss */
 .icon-tab > label:hover {
   background-color: #e3e3e3;
 }
-/* line 123, ../sass/google-mainmenu.scss */
+/* line 129, ../sass/google-mainmenu.scss */
 .icon-tab > label > div, .icon-tab > label > div:before, .icon-tab > label > div:after {
   content: '';
   position: absolute;
@@ -118,27 +121,27 @@ a {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 132, ../sass/google-mainmenu.scss */
+/* line 138, ../sass/google-mainmenu.scss */
 .icon-tab > label > div {
   left: 5px;
   width: calc(100% - 10px);
   top: 3.57143px;
 }
-/* line 137, ../sass/google-mainmenu.scss */
+/* line 143, ../sass/google-mainmenu.scss */
 .icon-tab > label > div:before {
   top: 7.14286px;
 }
-/* line 140, ../sass/google-mainmenu.scss */
+/* line 146, ../sass/google-mainmenu.scss */
 .icon-tab > label > div:after {
   top: 14.28571px;
 }
-/* line 146, ../sass/google-mainmenu.scss */
+/* line 152, ../sass/google-mainmenu.scss */
 .icon-tab input[type="checkbox"] {
   position: absolute;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 151, ../sass/google-mainmenu.scss */
+/* line 157, ../sass/google-mainmenu.scss */
 .icon-tab input[type="checkbox"]:checked ~ label {
   width: 100px;
   height: 100px;
@@ -148,7 +151,7 @@ a {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 157, ../sass/google-mainmenu.scss */
+/* line 163, ../sass/google-mainmenu.scss */
 .icon-tab input[type="checkbox"]:checked ~ .box {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
@@ -160,7 +163,7 @@ a {
   width: 100px;
   height: 100px;
 }
-/* line 166, ../sass/google-mainmenu.scss */
+/* line 172, ../sass/google-mainmenu.scss */
 .icon-tab .box {
   position: absolute;
   top: 0;
@@ -185,7 +188,7 @@ a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 181, ../sass/google-mainmenu.scss */
+/* line 187, ../sass/google-mainmenu.scss */
 .icon-tab .box .items {
   position: relative;
   display: inline-block;
@@ -193,7 +196,7 @@ a {
   height: calc(100% - 20px);
   overflow-y: auto;
 }
-/* line 188, ../sass/google-mainmenu.scss */
+/* line 194, ../sass/google-mainmenu.scss */
 .icon-tab .box .items .item {
   color: rgba(39, 40, 34, 0.6);
   padding: 2px 3px 1px 3px;
@@ -205,15 +208,15 @@ a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 196, ../sass/google-mainmenu.scss */
+/* line 202, ../sass/google-mainmenu.scss */
 .icon-tab .box .items .item:hover {
   background-color: #e3e3e3;
 }
-/* line 199, ../sass/google-mainmenu.scss */
+/* line 205, ../sass/google-mainmenu.scss */
 .icon-tab .box .items .item:not(:first-child) {
   border-top: 1px solid rgba(39, 40, 34, 0.6);
 }
-/* line 204, ../sass/google-mainmenu.scss */
+/* line 210, ../sass/google-mainmenu.scss */
 .icon-tab .box label {
   position: absolute;
   bottom: 0;
@@ -227,7 +230,7 @@ a {
   border-top: 1px solid black;
   line-height: 22px;
 }
-/* line 217, ../sass/google-mainmenu.scss */
+/* line 223, ../sass/google-mainmenu.scss */
 .icon-tab .box label:hover {
   background-color: #e3e3e3;
   -moz-transition: all 0.5s;
@@ -235,3 +238,181 @@ a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
+/* multiple icons */
+/* line 233, ../sass/google-mainmenu.scss */
+.navicon-button {
+  display: inline-block;
+  position: relative;
+  padding: 2.0625rem 1.5rem;
+  transition: 0.25s;
+  cursor: pointer;
+  user-select: none;
+  opacity: .8;
+}
+/* line 242, ../sass/google-mainmenu.scss */
+.navicon-button .navicon:before, .navicon-button .navicon:after {
+  transition: 0.25s;
+}
+/* line 246, ../sass/google-mainmenu.scss */
+.navicon-button:hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+/* line 250, ../sass/google-mainmenu.scss */
+.navicon-button:hover .navicon:before, .navicon-button:hover .navicon:after {
+  transition: 0.25s;
+}
+/* line 254, ../sass/google-mainmenu.scss */
+.navicon-button:hover .navicon:before {
+  top: .825rem;
+}
+/* line 255, ../sass/google-mainmenu.scss */
+.navicon-button:hover .navicon:after {
+  top: -.825rem;
+}
+
+/* line 259, ../sass/google-mainmenu.scss */
+.navicon {
+  position: relative;
+  width: 2.5em;
+  height: .3125rem;
+  background: #E7E6DD;
+  transition: 0.5s;
+  border-radius: 2.5rem;
+}
+/* line 267, ../sass/google-mainmenu.scss */
+.navicon:before, .navicon:after {
+  display: block;
+  content: "";
+  height: .3125rem;
+  width: 2.5rem;
+  background: #E7E6DD;
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s 0.25s;
+  border-radius: 1rem;
+}
+/* line 279, ../sass/google-mainmenu.scss */
+.navicon:before {
+  top: .625rem;
+}
+/* line 280, ../sass/google-mainmenu.scss */
+.navicon:after {
+  top: -.625rem;
+}
+
+/* line 283, ../sass/google-mainmenu.scss */
+.open:not(.steps) .navicon:before,
+.open:not(.steps) .navicon:after {
+  top: 0 !important;
+}
+
+/* line 288, ../sass/google-mainmenu.scss */
+.open .navicon:before,
+.open .navicon:after {
+  transition: 0.5s;
+}
+
+/* Minus */
+/* line 294, ../sass/google-mainmenu.scss */
+.open {
+  transform: scale(0.75);
+}
+
+/* Arrows */
+/* line 300, ../sass/google-mainmenu.scss */
+.open.larr .navicon:before, .open.larr .navicon:after,
+.open.rarr .navicon:before,
+.open.rarr .navicon:after,
+.open.uarr .navicon:before,
+.open.uarr .navicon:after {
+  width: 1.5rem;
+}
+/* line 304, ../sass/google-mainmenu.scss */
+.open.larr .navicon:before,
+.open.rarr .navicon:before,
+.open.uarr .navicon:before {
+  transform: rotate(35deg);
+  transform-origin: left top;
+}
+/* line 305, ../sass/google-mainmenu.scss */
+.open.larr .navicon:after,
+.open.rarr .navicon:after,
+.open.uarr .navicon:after {
+  transform: rotate(-35deg);
+  transform-origin: left bottom;
+}
+
+/* line 307, ../sass/google-mainmenu.scss */
+.open.uarr {
+  transform: scale(0.75) rotate(90deg);
+}
+
+/* Arrows */
+/* line 311, ../sass/google-mainmenu.scss */
+.open.rarr .navicon:before {
+  transform: translate3d(1em, 0, 0) rotate(-35deg);
+  transform-origin: right top;
+}
+/* line 312, ../sass/google-mainmenu.scss */
+.open.rarr .navicon:after {
+  transform: translate3d(1em, 0, 0) rotate(35deg);
+  transform-origin: right bottom;
+}
+
+/* × and + */
+/* line 318, ../sass/google-mainmenu.scss */
+.open.plus .navicon,
+.open.x .navicon {
+  background: transparent;
+}
+/* line 321, ../sass/google-mainmenu.scss */
+.open.plus .navicon:before,
+.open.x .navicon:before {
+  transform: rotate(-45deg);
+}
+/* line 322, ../sass/google-mainmenu.scss */
+.open.plus .navicon:after,
+.open.x .navicon:after {
+  transform: rotate(45deg);
+}
+
+/* line 325, ../sass/google-mainmenu.scss */
+.open.plus {
+  transform: scale(0.75) rotate(45deg);
+}
+
+/* Base ================== */
+/* line 332, ../sass/google-mainmenu.scss */
+section {
+  display: flex;
+  height: 400px;
+  max-width: 40rem;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: .5rem .5rem 0 0;
+  background: #E7E6DD;
+  overflow: hidden;
+  /* Smoother animations */
+}
+/* line 344, ../sass/google-mainmenu.scss */
+section *, section *:before, section *:after {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 351, ../sass/google-mainmenu.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4.5rem;
+  background: #2A2A2A;
+  text-align: right;
+  border-radius: .5rem .5rem 0 0;
+  padding: 0 1rem;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* multiple icons */
