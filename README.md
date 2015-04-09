@@ -1,4 +1,4 @@
-# google-mainmenu-example
+# add google mainmenu tab
 use margin-top and transition to show hide mainmenu
 
 # add icon tab
